@@ -1,0 +1,38 @@
+.Bienvenida {
+
+    stroke-dasharray: 2011;
+
+    stroke-dashoffset: 2011;
+
+}
+
+  
+.Punto {
+
+    opacity: 0;
+
+    animation-name: Mostrar;
+
+    animation-duration: 2s;
+
+    animation-timing-function: ease-in-out;
+
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes Mostrar {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}

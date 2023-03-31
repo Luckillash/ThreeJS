@@ -1,0 +1,101 @@
+.Arcoiris {
+
+    background-color: white;
+
+    pointer-events: all;
+
+    height: 450px;
+
+    width: 450px;
+
+    border: none;
+
+    position: relative;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+}
+
+.Arcoiris::before {
+
+    content: "";
+
+    height: 150%;
+
+    width: 150%;
+
+    left: -225%;
+
+    top: -225%;
+
+    position: absolute;
+
+    background: white;
+
+    border-radius: 50%;
+
+    transition: all 1s ease-out;
+
+    animation: spin 1.5s infinite linear;
+
+}
+
+.Arcoiris:hover:before {
+
+    left: -25%;
+
+    top: -25%;
+
+    background: conic-gradient(
+
+        #fd004c,
+
+        #fe9000,
+
+        #fff020,
+
+        #3edf4b,
+
+        #3363ff,
+
+        #fd004c
+
+      );
+
+}
+
+@keyframes spin {
+
+    100% {
+
+        transform: rotate(-360deg);
+        
+    }
+
+}
+
+.Arcoiris:after {
+
+    content: '';
+
+    position: absolute;
+
+    background-color: black;
+
+    height: 95%;
+
+    width: 95%;
+
+    position: absolute;
+
+    top: 0%;
+
+    left: 0%;
+
+    margin: 2.5%;
+
+}

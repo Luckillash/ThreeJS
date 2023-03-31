@@ -1,0 +1,214 @@
+.Titulo {
+
+    font-size: 4rem;
+
+}
+
+.Parrafo {
+
+    font-size: 1.5rem;
+
+}
+
+.Contenido {
+
+
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    color: white;
+
+    background-color: #202731;
+
+    overflow-x: hidden;
+
+    z-index: -1;
+
+}
+
+.Seccion {
+
+    color: white;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-height: 500px;
+
+    padding: 100px 20vw;
+
+}
+
+.Azul {
+
+    background-color: #3c31dd;
+
+}
+
+.Rojo {
+
+    background-color: #dd3f31;
+
+}
+
+.Rosado {
+
+    background-color: #ff0066;
+
+}
+
+.Oscuro {
+
+    background-color: #0f0f10;
+
+}
+
+.Curva {
+
+    position: absolute;
+
+    height: 225px;
+
+    width: 100%;
+
+    bottom: 0;
+
+}
+
+.Curva::before {
+
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    border-radius: 100% 50%;
+
+    width: 55%;
+
+    height: 100%;
+
+    background-color: #202731;
+
+    transform: translate(85%, 60%);
+
+}
+
+.Curva::after {
+
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    border-radius: 100% 50%;
+
+    width: 55%;
+
+    height: 100%;
+
+    background-color: #3c31dd;
+
+    transform: translate(-4%, 40%);
+
+}
+
+.Burbuja::after {
+
+    z-index: -1;
+
+    content: '';
+
+    border-top-left-radius: 50% 100%;
+
+    border-top-right-radius: 50% 100%;
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 85%;
+
+    background-color: #0f0f10;
+
+}
+
+.Ola {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    line-height: 0;
+
+}
+
+.Ola svg {
+
+    position: relative;
+
+    display: block;
+
+    width: calc(100% + 1.3px);
+
+    height: 174px;
+
+}
+
+.Ola .Relleno_Ola {
+
+    fill: #0f0f10;
+
+}
+
+.Espaciador {
+
+    aspect-ratio: 960/300;
+
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+}
+
+.Capa1 {
+
+    background-image: url('./assets/OlasMultiples.svg');
+
+}
+
+.Capa2 {
+
+    background-image: url('./assets/OlasMultiples2Abajo.svg');
+
+}
+
+.Capa3 {
+
+    background-image: url('./assets/OlasMultiples2Arriba.svg');
+
+}
+
+.Flip {
+
+    transform: rotate(180deg);
+
+}
